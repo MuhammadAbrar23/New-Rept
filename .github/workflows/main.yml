@@ -30,8 +30,6 @@ jobs:
           node-version: 12  
       # Runs a set of commands using the runners shell
       - name: install surge
-        run: npm instal --global surge
+        run: npm install --global surge
       - name: deploying surge
-        run: surge ./  overconfident-idea.surge.sh --token"2e7a72edb45c815a1a308fec7e96b717"
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: surge ./ overconfident-idea.surge.sh --token"2e7a72edb45c815a1a308fec7e96b717"
